@@ -12,9 +12,29 @@
   title_receive_fg_color = "#2E3440"
   title_transmit_bg_color = "#88C0D0"
   title_transmit_fg_color = "#2E3440"
+[keybindings]
+  go_up = None
+  go_down = None
+  go_left = None
+  go_right = None
+  help = None
 [profiles]
   [[nord]]
-    background_color = "#2E3440"
+    background_color = "#1C2028"
     cursor_color = "#D8DEE9"
     foreground_color = "#D8DEE9"
     palette = "#3B4252:#BF616A:#A3BE8C:#EBCB8B:#81A1C1:#B48EAD:#88C0D0:#E5E9F0:#4C566A:#BF616A:#A3BE8C:#EBCB8B:#81A1C1:#B48EAD:#8FBCBB:#ECEFF4"
+    cursor_blink = False
+    font = Hack 11
+    show_titlebar = False
+    scrollbar_position = hidden
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = nord
